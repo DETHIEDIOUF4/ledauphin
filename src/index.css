@@ -1,0 +1,94 @@
+/* Le Restaurant Dauphin — style global, inspiré du Cabanon */
+
+:root {
+  --color-navy: #1a3a52;
+  --color-navy-light: #2d5a7b;
+  --color-gold: #c9a962;
+  --color-gold-light: #d4b872;
+  --color-cream: #f5f0e6;
+  --color-cream-dark: #e8e4dc;
+  --color-text: #2c2c2c;
+  --color-text-muted: #666;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Montserrat', -apple-system, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-text);
+  background: var(--color-cream);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+}
+
+/* Utilitaires communs aux pages */
+.page {
+  padding-top: 4.5rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Héros de page (À propos, Menu, Bar, etc.) */
+.page-hero {
+  padding: 5rem 1.5rem 3rem;
+}
+
+.page-hero .container {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.page-tagline {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin: 0 0 0.5rem;
+}
+
+.page-hero h1 {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 0;
+  color: inherit;
+}
+
+a {
+  color: var(--color-navy);
+}

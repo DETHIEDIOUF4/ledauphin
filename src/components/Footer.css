@@ -1,0 +1,155 @@
+.footer {
+  background: #1a3a52;
+  color: #e8e4dc;
+  margin-top: auto;
+  border-top: 1px solid rgba(201, 169, 98, 0.25);
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 1.5rem;
+}
+
+.footer-brand {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.footer-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f5f0e6;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 0.25rem;
+}
+
+.footer-logo:hover {
+  color: #c9a962;
+}
+
+.footer-tagline {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #c9a962;
+  margin: 0;
+}
+
+.footer-quote {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.footer-quote blockquote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #e8e4dc;
+  margin: 0;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-contact {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.footer-contact h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #f5f0e6;
+  margin: 0 0 0.75rem;
+}
+
+.footer-social {
+  margin-top: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social span {
+  color: #c9a962;
+  margin-right: 0.25rem;
+}
+
+.footer-social a {
+  color: #e8e4dc;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.footer-social a:hover {
+  color: #ffffff;
+}
+
+.footer-social-icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  display: inline-block;
+}
+
+.footer-social-icon--instagram {
+  background: radial-gradient(circle at 30% 30%, #feda75, #d62976 40%, #962fbf 70%, #4f5bd5 100%);
+}
+
+.footer-social-icon--tiktok {
+  background: #000;
+  box-shadow: 0 0 0 1px #e8e4dc;
+}
+
+.footer-social-icon--youtube {
+  background: #ff0000;
+}
+
+.footer-address,
+.footer-hours {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin: 0.25rem 0;
+  color: #c5c0b8;
+}
+
+.footer-link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  color: #c9a962;
+  text-decoration: none;
+  font-size: 0.9rem;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.footer-link:hover {
+  border-bottom-color: #c9a962;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-bottom p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  color: #9a958d;
+  margin: 0;
+}

@@ -1,0 +1,169 @@
+.contact-page .page-hero {
+  background: linear-gradient(135deg, #1a3a52 0%, #2d5a7b 100%);
+  color: #f5f0e6;
+  padding: 6rem 1.5rem 4rem;
+  text-align: center;
+}
+
+.contact-page .page-tagline {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #c9a962;
+  margin: 0 0 0.5rem;
+}
+
+.contact-page .page-hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.contact-content {
+  padding: 4rem 1.5rem;
+  background: #f5f0e6;
+}
+
+.contact-grid {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.contact-info h2,
+.contact-form-wrap h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  color: #1a3a52;
+  margin: 0 0 1rem;
+}
+
+.contact-address,
+.contact-hours,
+.contact-phone,
+.contact-email {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+  margin: 0 0 0.75rem;
+}
+
+.contact-email a {
+  color: #1a3a52;
+  text-decoration: none;
+  border-bottom: 1px solid #c9a962;
+}
+
+.contact-email a:hover {
+  color: #c9a962;
+}
+
+.contact-social {
+  margin-top: 1.5rem;
+}
+
+.contact-social h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  color: #1a3a52;
+  margin: 0 0 0.5rem;
+}
+
+.contact-social-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+}
+
+.contact-social-list a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  color: #1a3a52;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.contact-social-list a:hover {
+  color: #c9a962;
+}
+
+.contact-social-icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  display: inline-block;
+}
+
+.contact-social-icon--instagram {
+  background: radial-gradient(circle at 30% 30%, #feda75, #d62976 40%, #962fbf 70%, #4f5bd5 100%);
+}
+
+.contact-social-icon--tiktok {
+  background: #000;
+  box-shadow: 0 0 0 1px #1a3a52;
+}
+
+.contact-social-icon--youtube {
+  background: #ff0000;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.contact-form label span {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #1a3a52;
+  margin-bottom: 0.35rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  border: 1px solid rgba(26, 58, 82, 0.25);
+  border-radius: 4px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #c9a962;
+}
+
+.contact-form button {
+  margin-top: 0.5rem;
+}
+
+.form-success {
+  font-family: 'Montserrat', sans-serif;
+  color: #1a3a52;
+  padding: 1rem;
+  background: rgba(201, 169, 98, 0.15);
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

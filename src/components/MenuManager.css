@@ -1,0 +1,239 @@
+.menu-manager {
+  margin-top: 1rem;
+}
+
+.menu-manager-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.menu-manager-header h2 {
+  margin: 0;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.35rem;
+  color: #1a3a52;
+}
+
+.menu-manager-form {
+  background: #f9f7f2;
+  padding: 1.25rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid rgba(26, 58, 82, 0.12);
+  margin-bottom: 1.5rem;
+}
+
+.menu-manager-form h3 {
+  margin: 0 0 1rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem;
+  color: #1a3a52;
+}
+
+.menu-manager-form label {
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.menu-manager-form label span {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #1a3a52;
+  margin-bottom: 0.25rem;
+}
+
+.menu-manager-form input,
+.menu-manager-form select {
+  width: 100%;
+  padding: 0.5rem 0.6rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  border: 1px solid rgba(26, 58, 82, 0.25);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.menu-manager-form input:focus,
+.menu-manager-form select:focus {
+  outline: none;
+  border-color: #c9a962;
+}
+
+.menu-manager-form .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.menu-manager-form .form-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.menu-manager-error {
+  color: #c0392b;
+  font-size: 0.9rem;
+  margin: 0 0 0.75rem;
+}
+
+.menu-manager-photo-row {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.menu-manager-photo-inputs {
+  flex: 1 1 260px;
+}
+
+.menu-manager-upload-row {
+  margin-top: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.menu-manager-upload-help {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.menu-manager-upload-error {
+  font-size: 0.8rem;
+  color: #c0392b;
+  margin: 0.2rem 0 0;
+}
+
+.menu-manager-uploading {
+  font-size: 0.8rem;
+  color: #8a6b3f;
+  margin: 0.2rem 0 0;
+}
+
+.menu-manager-photo-preview {
+  flex: 0 0 96px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(26, 58, 82, 0.15);
+  background: #fff;
+}
+
+.menu-manager-photo-preview img {
+  display: block;
+  width: 100%;
+  height: 96px;
+  object-fit: cover;
+}
+
+.menu-manager-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.menu-manager-category h4 {
+  margin: 0 0 0.5rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  color: #1a3a52;
+}
+
+.menu-manager-category ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-manager-item {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid rgba(26, 58, 82, 0.08);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.menu-manager-item:last-child {
+  border-bottom: none;
+}
+
+.menu-manager-item-name {
+  font-weight: 500;
+  color: #1a3a52;
+}
+
+.menu-manager-item-desc {
+  font-size: 0.85rem;
+  color: #666;
+  grid-column: 1;
+}
+
+.menu-manager-item-price {
+  font-weight: 500;
+  color: #1a3a52;
+}
+
+.menu-manager-item-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-small {
+  font-size: 0.8rem;
+  padding: 0.35rem 0.6rem;
+}
+
+.btn-danger {
+  background: transparent;
+  color: #c0392b;
+  border-color: #c0392b;
+}
+
+.btn-danger:hover {
+  background: rgba(192, 57, 43, 0.1);
+}
+
+.menu-manager-form .btn-secondary {
+  background: #e0ddd6;
+  color: #1a3a52;
+  border-color: #c5c0b8;
+}
+
+.menu-manager-form .btn-secondary:hover {
+  background: #d0cdc4;
+  color: #1a3a52;
+}
+
+.menu-manager-loading,
+.menu-manager-empty {
+  font-family: 'Montserrat', sans-serif;
+  color: #666;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 640px) {
+  .menu-manager-form .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-manager-photo-row {
+    flex-direction: column;
+  }
+
+  .menu-manager-item {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+
+  .menu-manager-item-actions {
+    margin-top: 0.25rem;
+  }
+}

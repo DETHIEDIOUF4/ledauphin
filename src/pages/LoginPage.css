@@ -1,0 +1,78 @@
+.login-page {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background: #f5f0e6;
+}
+
+.login-section {
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-box {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 8px;
+  border: 1px solid rgba(26, 58, 82, 0.12);
+  box-shadow: 0 4px 20px rgba(26, 58, 82, 0.08);
+}
+
+.login-box h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.75rem;
+  color: #1a3a52;
+  margin: 0 0 0.25rem;
+  text-align: center;
+}
+
+.login-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  color: #666;
+  text-align: center;
+  margin: 0 0 1.5rem;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.login-form label span {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #1a3a52;
+  margin-bottom: 0.35rem;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 0.65rem 0.75rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  border: 1px solid rgba(26, 58, 82, 0.25);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #c9a962;
+}
+
+.login-error {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  color: #c0392b;
+  margin: 0 0 1rem;
+}
+
+.btn-block {
+  width: 100%;
+  margin-top: 0.5rem;
+}

@@ -1,0 +1,101 @@
+.gestion-layout {
+  display: flex;
+  min-height: calc(100vh - 120px);
+  padding-top: 4rem;
+}
+
+.gestion-sidebar {
+  width: 240px;
+  flex-shrink: 0;
+  background: #1a3a52;
+  color: #f5f0e6;
+  padding: 1.5rem 0;
+}
+
+.gestion-sidebar-header {
+  padding: 0 1.25rem 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 1rem;
+}
+
+.gestion-sidebar-header h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.25rem;
+  margin: 0 0 0.25rem;
+}
+
+.gestion-user {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  color: #c9a962;
+  margin: 0;
+}
+
+.gestion-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.gestion-nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  color: #e8e4dc;
+  text-decoration: none;
+  padding: 0.6rem 1.25rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.gestion-nav-link:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+}
+
+.gestion-nav-link.active {
+  background: rgba(201, 169, 98, 0.2);
+  color: #c9a962;
+  font-weight: 500;
+}
+
+.gestion-main {
+  flex: 1;
+  padding: 1.5rem 2rem;
+  background: #f5f0e6;
+  overflow: auto;
+}
+
+@media (max-width: 768px) {
+  .gestion-layout {
+    flex-direction: column;
+  }
+
+  .gestion-sidebar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .gestion-sidebar-header {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .gestion-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+
+  .gestion-nav-link {
+    padding: 0.4rem 0.75rem;
+    border-radius: 4px;
+  }
+
+  .gestion-main {
+    padding: 1rem;
+  }
+}
