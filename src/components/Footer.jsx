@@ -37,6 +37,12 @@ export default function Footer() {
         </div>
         <div className="footer-bottom">
           <p>© {new Date().getFullYear()} Le Restaurant Dauphin</p>
+          <p className="footer-credit">
+            Designed by{' '}
+            <a href="https://dioufdethie.netlify.app/" target="_blank" rel="noreferrer noopener">
+              DDEv
+            </a>
+          </p>
         </div>
       </div>
     </footer>
